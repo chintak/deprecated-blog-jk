@@ -3,8 +3,13 @@ layout: post
 title: "Setting up Development Environment!"
 date: 2013-06-17 14:14
 comments: true
-tags: [scikit-image, setup, numpy, cython, scipy]
 keywords: "setup, scikit-image, numpy, cython, scipy, matplotlib, mac osx, Sublime Text 2"
+categories:
+- scikit-image
+- setup
+- numpy
+- cython
+- scipy
 ---
 
 It’s been quite a while since I last posted. I am extremely extremely happy to
