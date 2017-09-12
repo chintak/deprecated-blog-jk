@@ -21,7 +21,7 @@ This post will describe about the more advanced and fun stuff about [NumPy](http
     - `np.einsum`
 - Example
 
-### VECTORIZATION
+### Vectorization
 
 First let's revisit how we would do any arithmetic operation on all the elements of list ([Python](http://www.python.org/) in-built container). Looping through all the elements is probably the only way to go about it. The neatest syntax is using [list comprehensions](http://en.wikipedia.org/wiki/List_comprehension).
 
@@ -64,7 +64,7 @@ array([25, 49, 81])
 
 This would help skip a lot of loops in your implementation. Towards the end of this post I'll provide an example which would help connect all the ideas listed here and enable you to perform really powerful operations rather trivially using NumPy. I've completely become a fan of NumPy!
 
-### BROADCASTING
+### Broadcasting
 
 If I ask you the answer to "banana * orange = ?", you'll most certainly look at me as if I'm crazy. But as it turns out, NumPy is also capable of handling operations between arrays of different sizes. The only criteria being that, NumPy should be able to extend all the arrays involved in an operation to a common shape. This is what we call Broadcasting. Let me give couple of examples to further elaborate on this idea.
 
@@ -143,7 +143,7 @@ array([[[ 0],
 {% endhighlight %}
 
 
-### FANCY THAT: `np.ogrid`
+### Fancy That: `np.ogrid`
 
 You can also this function to create a row array and a column array, and use broadcasting to generate a complete array as follows:
 
@@ -176,7 +176,7 @@ array([[ 5,  6,  7],
 
 Here, we generate a row and column array using `np.ogrid` (note that its not a function). The option with slicing does look like a neater and cleaner approach, however if you want to do this in a loop with a lot of variables flying around, it may not be the best approach.
 
-### FANCY THAT: `numpy.lib.stride_tricks.as_strided`
+### Fancy That: `numpy.lib.stride_tricks.as_strided`
 
 This is one of the wonders of NumPy which has the power to make loops outdated. Strides, is a method in which NumPy can keep a track or this is how it knows how to get to the nest element in the row or column. How many leaps in the memory to the next element ? This of course also depends on the data type you are using. For example:
 
@@ -272,7 +272,7 @@ array([[0, 0, 0, 0],
 
 As you can see, all the "1" were really just a single "1". Hence, when you change any of the element, the change is reflected everywhere since in reality they are all the same.
 
-### FANCY THAT: `np.einsum`
+### Fancy That: `np.einsum`
 
 This stands for Einstein's summation. Using this function you can implement a lot of in-built functions involving summation. The syntax is as follows:
 
@@ -339,7 +339,7 @@ array([220, 235, 250, 265])
 {% endhighlight %}
 
 
-### EXAMPLE
+### Example
 
 Finally, before concluding this post, I would like to give an example, real code which I am using in my project, to help connect all these ideas and put them in perspective.
 

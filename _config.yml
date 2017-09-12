@@ -1,21 +1,41 @@
-# Site settings
-title:       Chintak Sheth
-email:       chintak.sheth !! stonybrook.edu
+title: ChaosML
+name:  ML;DL
+email:       csheth !! cs.stonybrook.edu
 author:      Chintak Sheth
-description: "Blog containing notes on computer vision, natural language
-processing and deep learning."
-baseurl:     ""
-url:         "http://chintak.github.io"
+description: >
+    Notes on machine learning and deep learning.
 date_format: "%b %-d, %Y"
 
-# Google services
-google_verification:
-# Use either direct GA implementation or set up GTM account
-# - using both will skew your data (leave blank to not use at all)
+master_repo: false
+url: "chintak.github.io"
+markdown: kramdown
+highlighter: rouge
+
+plugins: ['jekyll-paginate', 'jekyll-gist']
+
+paginate: 5
+
+logo:             favicon.ico
+disqus_shortname: chintaksheth
+
+hashtag: ChintakShethBlog
+
+owner:
+  name:           chintak sheth
+  avatar:         ""
+  email:          "csheth !! cs.stonybrook.edu"
+  # Social networking links used in footer. Update and remove as you like.
+  github: chintak
+  bitbucket: chintak
+  stackoverflow_id:
+  twitter: chintaksheth
+  linkedin: chintaksheth
+
+# Analytics and webmaster tools stuff goes here
 google_analytics:
-google_tag_manager:
-# Bing services
-bing_verification:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
 # Optional features
 animated:             false
@@ -26,93 +46,6 @@ ajaxify_contact_form: false
 enable_mathjax: true
 extended_fonts: false
 enable_anchorjs: false
-
-# Facebook Page integration
-# (for instant articles and other stuff)
-fb_page: false
-fb_page_id:
-
-# Disqus post comments
-# (leave blank to disable Disqus)
-disqus_shortname: chintaksheth
-
-# Facebook Comments plugin
-# (leave blank to disable Facebook Comments, otherwise set it to true)
-facebook_comments:
-facebook_appid:
-facebook_comments_number: 10
-
-# Social icons
-github_username: chintak
-bitbucket_username: chintak
-stackoverflow_id:
-twitter_username: chintaksheth
-skype_username:
-steam_nickname:
-google_plus_id:
-linkedin_username: chintaksheth
-angellist_username:
-medium_id:
-bitcoin_url:
-paypal_url:
-flattr_button:
-
-# Post sharing icons
-show_sharing_icons: true
-# Change to 'true' to enable individual icons
-share_facebook: true
-share_twitter: true
-share_googleplus: false
-share_linkedin: true
-share_digg: false
-share_tumblr: false
-share_reddit: true
-share_stumbleupon: false
-share_hackernews: false
-
-text:
-  pagination:
-    newer: 'Newer'
-    older: 'Older'
-  share_buttons:
-    text:         'Share this post!'
-    facebook:     'Share on Facebook'
-    twitter:      'Share on Twitter'
-    googleplus:   'Share on Google+'
-    linkedin:     'Share on LinkedIn'
-    digg:         'Share on Digg'
-    tumblr:       'Share on Tumblr'
-    reddit:       'Share on Reddit'
-    stumbleupon:  'Share on StumbleUpon'
-    hackernews:   'Share on Hacker News'
-  post:
-    updated:        'Updated'
-    minute_read:    'minute read'
-    related_posts:  'Related Posts'
-  index:
-    coming_soon: 'Coming soon...'
-  contact:
-    email:    'Email Address'
-    content:  'What would you like to say?'
-    subject:  'New submission!'
-    submit:   'Say Hello'
-    ajax:
-      sending:  'sending..'
-      sent:     'Message sent!'
-      error:    'Error!'
-  thanks: 'Thanks for contacting us. We will reply as soon as possible.'
-  og_locale: 'en_US'
-
-# Build settings
-markdown:     kramdown
-redcarpet:
-  extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
-paginate:     10
 sass:
   compressed: true
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
-# https://github.com/jekyll/jekyll/issues/2938
-exclude: [vendor]
